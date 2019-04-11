@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>todolist</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+    <div class="form">
+      <h1 class="title">todos</h1>
+      <form class="add-form" method="post">
+        <label for="add-form-input">
+          <input class="add-form-input" id="add-form-input" type="text" placeholder="What needs to be done?" required>
+        </label>
+      </form>
+    <ul class="todo-list">
+        <li class="todo-list-item">
+            <label class="todo-list-input">
+            </label>
+        </li>
+    </ul>
+    <p class="tasks hidden">Все задачи выполнены. Новых задач нет.</p>
+    <template id="task-template">
+      <li class="todo-list-item">
+        <label class="css-label">
+          <input type="checkbox" class="todo-list-input">
+          <span></span>
+        </label>
+      </li>
+    </template>
+    <script src="todolist.js"></script>
+  </div>
+</div>
+  </body>
+  
+</html>
