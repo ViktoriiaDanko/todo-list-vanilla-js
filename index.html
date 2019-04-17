@@ -10,16 +10,24 @@
     <div class="form">
       <h1 class="title">todos</h1>
       <form class="add-form" method="post">
-        <label for="add-form-input">
           <input class="add-form-input" id="add-form-input" type="text" placeholder="What needs to be done?" required>
-        </label>
       </form>
+    <div class="main">
     <ul class="todo-list">
         <li class="todo-list-item">
-            <label class="todo-list-input">
+            <label for="todo-list-input">
+              <input class="todo-list-input" type="checkbox" id="todo-list-input">
+              <span>Мирьли</span>
             </label>
         </li>
+        <li class="todo-list">
+          <label for="todo-list-input">
+            <input class="todo-list-input" type="checkbox" id="todo-list-input">
+            <span>Про</span>
+          </label>
+        </li>
     </ul>
+    </div>
     <p class="tasks hidden">Все задачи выполнены. Новых задач нет.</p>
     <template id="task-template">
       <li class="todo-list-item">
